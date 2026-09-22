@@ -7,7 +7,7 @@ plugins {
 android {
     namespace = "victoruizz.com.github.todolist"
     compileSdk {
-        version = release(37)
+        version = release(36)
     }
 
     defaultConfig {
