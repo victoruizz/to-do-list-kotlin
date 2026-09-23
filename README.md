@@ -98,73 +98,73 @@ Capturas feitas no emulador (Medium Phone, Android 16).
 
 Estado inicial do app, sem nenhuma tarefa cadastrada. A mensagem "Nenhuma tarefa cadastrada." é exibida no centro e o botão flutuante **+** abre o formulário.
 
-![Lista vazia](docs/images/app/01-lista-vazia.png)
+<img src="docs/images/app/01-lista-vazia.png" alt="Lista vazia" width="280">
 
 ### 2. Formulário de nova tarefa
 
 Aberto pelo botão **+**. O título da barra superior mostra "Nova Tarefa". O botão **Salvar** começa desabilitado, porque o título ainda está vazio.
 
-![Formulário de nova tarefa](docs/images/app/02-formulario-nova-tarefa.png)
+<img src="docs/images/app/02-formulario-nova-tarefa.png" alt="Formulário de nova tarefa" width="280">
 
 ### 3. Formulário preenchido
 
 Com o título preenchido, o botão **Salvar** é habilitado. A descrição é opcional. Nesse estado a tarefa seria salva sem prazo.
 
-![Formulário preenchido](docs/images/app/03-formulario-preenchido.png)
+<img src="docs/images/app/03-formulario-preenchido.png" alt="Formulário preenchido" width="280">
 
 ### 4. Data e horário ativados
 
 Ao ligar o switch **Definir data e horário**, aparecem dois botões: um para a data e outro para a hora. Enquanto nenhum dos dois for escolhido, o **Salvar** fica desabilitado — o app não deixa salvar um prazo pela metade.
 
-![Data e horário ativados](docs/images/app/04-data-hora-ativado.png)
+<img src="docs/images/app/04-data-hora-ativado.png" alt="Data e horário ativados" width="280">
 
 ### 5. Seletor de data
 
 `DatePickerDialog` do Material 3, aberto pelo botão **Selecionar data**. A data escolhida é convertida de UTC para o fuso do aparelho antes de ser guardada.
 
-![Seletor de data](docs/images/app/05-seletor-data.png)
+<img src="docs/images/app/05-seletor-data.png" alt="Seletor de data" width="280">
 
 ### 6. Seletor de hora
 
 `TimePicker` do Material 3, em formato 24 horas, aberto pelo botão **Selecionar hora**. Os botões **Cancelar** e **OK** ficam abaixo do relógio.
 
-![Seletor de hora](docs/images/app/06-seletor-hora.png)
+<img src="docs/images/app/06-seletor-hora.png" alt="Seletor de hora" width="280">
 
 ### 7. Formulário com prazo definido
 
 Depois das escolhas, os botões passam a mostrar a data e a hora selecionadas (`25/09/2026` e `15:30`), e o **Salvar** é habilitado. Data e hora são combinadas em um único valor de milissegundos e gravadas no campo `dataHora`.
 
-![Formulário com prazo](docs/images/app/07-formulario-com-prazo.png)
+<img src="docs/images/app/07-formulario-com-prazo.png" alt="Formulário com prazo" width="280">
 
 ### 8. Tarefa cadastrada na lista
 
 Ao salvar, o app volta para a lista. O card mostra título, descrição e o prazo formatado como `25/09/2026 às 15:30`.
 
-![Lista com tarefa](docs/images/app/08-lista-com-tarefa.png)
+<img src="docs/images/app/08-lista-com-tarefa.png" alt="Lista com tarefa" width="280">
 
 ### 9. Ordenação por prazo e destaque de atraso
 
 Com várias tarefas, a lista é ordenada pelo prazo mais próximo; tarefas sem prazo ficam por último. A tarefa "Revisar MVVM", cujo prazo já passou e que não está concluída, aparece em **vermelho e negrito**.
 
-![Lista com prazos e atraso](docs/images/app/09-lista-prazos-e-atraso.png)
+<img src="docs/images/app/09-lista-prazos-e-atraso.png" alt="Lista com prazos e atraso" width="280">
 
 ### 10. Edição de tarefa
 
 Tocar no card abre o mesmo formulário em modo de edição: a barra superior mostra "Editar Tarefa" e todos os campos vêm preenchidos, inclusive o prazo. Ao salvar, o registro existente é atualizado em vez de criar um novo.
 
-![Edição de tarefa](docs/images/app/10-edicao-tarefa.png)
+<img src="docs/images/app/10-edicao-tarefa.png" alt="Edição de tarefa" width="280">
 
 ### 11. Tarefa concluída
 
 Marcar o checkbox risca o título da tarefa. A tarefa concluída deixa de ser tratada como atrasada, mesmo que o prazo já tenha vencido.
 
-![Tarefa concluída](docs/images/app/11-tarefa-concluida.png)
+<img src="docs/images/app/11-tarefa-concluida.png" alt="Tarefa concluída" width="280">
 
 ### 12. Confirmação de exclusão
 
 O ícone de lixeira não exclui direto: abre um diálogo sobre a lista, informando o título da tarefa selecionada. **Cancelar** fecha sem alterar nada e **Excluir** remove apenas aquela tarefa.
 
-![Diálogo de exclusão](docs/images/app/12-dialogo-exclusao.png)
+<img src="docs/images/app/12-dialogo-exclusao.png" alt="Diálogo de exclusão" width="280">
 
 O passo a passo completo desse fluxo está em [EVIDENCIAS_EXCLUSAO.md](EVIDENCIAS_EXCLUSAO.md).
 
